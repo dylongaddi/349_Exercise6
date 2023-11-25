@@ -17,8 +17,6 @@ export default function Calculator() {
       setSecondNum('');
       setSecondNum(secondNum + number.toString());
     }
-    console.log(firstNum)
-    console.log(secondNum)
   }
 
   function handleOperatorClick(curOperator) {
@@ -92,25 +90,25 @@ export default function Calculator() {
             <CalcButton onClick={() => handleNumberClick('7')}>7</CalcButton>
             <CalcButton onClick={() => handleNumberClick('8')}>8</CalcButton>
             <CalcButton onClick={() => handleNumberClick('9')}>9</CalcButton>
-            <CalcButton onClick={() => handleOperatorClick('+')}>+</CalcButton>
+            <CalcButton className="operator" onClick={() => handleOperatorClick('+')}>+</CalcButton>
           </div>
           <div className="row">
             <CalcButton onClick={() => handleNumberClick('4')}>4</CalcButton>
             <CalcButton onClick={() => handleNumberClick('5')}>5</CalcButton>
             <CalcButton onClick={() => handleNumberClick('6')}>6</CalcButton>
-            <CalcButton onClick={() => handleOperatorClick('/')}>-</CalcButton>
+            <CalcButton className="operator" onClick={() => handleOperatorClick('-')}>-</CalcButton>
           </div>
           <div className="row">
             <CalcButton onClick={() => handleNumberClick('1')}>1</CalcButton>
             <CalcButton onClick={() => handleNumberClick('2')}>2</CalcButton>
             <CalcButton onClick={() => handleNumberClick('3')}>3</CalcButton>
-            <CalcButton onClick={() => handleOperatorClick('x')}>x</CalcButton>
+            <CalcButton className="operator" onClick={() => handleOperatorClick('x')}>x</CalcButton>
           </div>
           <div className="row">
             <CalcButton onClick={() => handleNumberClick('0')}>0</CalcButton>
-            <CalcButton onClick={handleDecimalPointClick}>.</CalcButton>
-            <CalcButton onClick={() => handleEqualsClick('=')}>=</CalcButton>
-            <CalcButton onClick={() => handleOperatorClick('/')}>/</CalcButton>
+            <CalcButton className="operator" onClick={handleDecimalPointClick}>.</CalcButton>
+            <CalcButton className="equals" onClick={() => handleEqualsClick('=')}>=</CalcButton>
+            <CalcButton className="operator" onClick={() => handleOperatorClick('/')}>/</CalcButton>
           </div>
         </div>
       </div>
