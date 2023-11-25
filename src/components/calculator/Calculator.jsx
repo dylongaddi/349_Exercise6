@@ -72,8 +72,10 @@ export default function Calculator() {
   }
 
   function handleDecimalPointClick() {
-    if (!firstNum.includes('.')) {
+    if (!firstNum.includes('.') && !secondNum) {
       setFirstNum(firstNum + '.');
+    } else if (secondNum && !secondNum.includes('.')) {
+      setSecondNum(secondNum + '.');
     }
   }
 
