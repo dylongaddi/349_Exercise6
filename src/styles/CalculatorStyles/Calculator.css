@@ -1,0 +1,22 @@
+.row {
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.calcButton {
+  padding: 8%;
+}
+
+.deleters {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.calculator {
+  margin-top: 30%;
+  border: 5px black solid;
+  padding: 4%;
+  background-color: lightblue;
+}
